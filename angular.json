@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular-custom-elements": {
+    "angular-micro-frontend": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/angular-custom-elements",
+            "outputPath": "dist/angular-micro-frontend",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -66,18 +66,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "angular-custom-elements:build"
+            "browserTarget": "angular-micro-frontend:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "angular-custom-elements:build:production"
+              "browserTarget": "angular-micro-frontend:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angular-custom-elements:build"
+            "browserTarget": "angular-micro-frontend:build"
           }
         },
         "test": {
@@ -114,11 +114,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "angular-custom-elements:serve"
+            "devServerTarget": "angular-micro-frontend:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "angular-custom-elements:serve:production"
+              "devServerTarget": "angular-micro-frontend:serve:production"
             }
           }
         }
@@ -367,7 +367,7 @@
       }
     }
   },
-  "defaultProject": "angular-custom-elements",
+  "defaultProject": "angular-micro-frontend",
   "cli": {
     "analytics": false
   }
