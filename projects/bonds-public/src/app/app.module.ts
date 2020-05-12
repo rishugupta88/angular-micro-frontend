@@ -7,8 +7,6 @@ import { View1Component } from './view1/view1.component';
 import { View2Component } from './view2/view2.component';
 import { NavComponent } from './nav/nav.component';
 
-const providers = [];
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,19 +18,8 @@ const providers = [];
     BrowserModule,
     AppRoutingModule
   ],
-  providers: providers,
+  providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
-
-
-@NgModule({})
-export class PublicBondsSharedModule {
-  static forRoot(): ModuleWithProviders<AppModule> {
-    return {
-      ngModule: AppModule,
-      providers: providers
-    }
-  }
-}
+export class PublicBondsModule { }
 

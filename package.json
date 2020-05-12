@@ -1,5 +1,5 @@
 {
-  "name": "angular-micro-frontend",
+  "name": "angular-custom-elements",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
